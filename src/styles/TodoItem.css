@@ -1,8 +1,11 @@
 .TodoItem {
-    background-color: #FAFAFA;
+    background-color: #ece4d4;
+    border-radius: 5px;
+    margin: 0 24px;
     position: relative;
     display: flex;
     justify-content: center;
+    width: calc(100% - 20px);
     align-items: center;
     margin-top: 24px;
     box-shadow: 0px 5px 50px rgba(32, 35, 41, 0.15);
@@ -41,9 +44,23 @@
   
   .Icon-delete {
     position: absolute;
-    top: -24px;
+    top: 12px;
     right: 0;
   }
+  
   .Icon-delete:hover {
     color: red;
+  }
+
+
+  .container-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media (min-width: 900px) {
+    .TodoItem {
+      width: calc(100% - 400px);
+    }
   }

@@ -5,7 +5,9 @@ import { TiPlusOutline } from 'react-icons/ti'
 
 function CreateTodoButton(props) {
   return (
-    <button className="CreateTodoButton"><TiPlusOutline /></button>
+    <div className="conatiner-button">
+      <button className="CreateTodoButton"><TiPlusOutline /></button>
+    </div>
   );
 }
 
